@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bitcoin Price Chart</title>
   <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
   <style>
     body {
-      margin: 0;
-      padding: 0;
+      background-color: #f9f9f9;
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #f4f4f4;
+      margin: 0;
     }
-
     .widget-container {
-      width: 50%;
-      max-width: 600px;
-      min-width: 300px;
+      width: 400px;
     }
   </style>
 </head>
@@ -30,7 +26,8 @@
       locale="en" 
       outlined="true" 
       coin-id="bitcoin" 
-      initial-currency="usd">
+      initial-currency="usd" 
+      width="400">
     </gecko-coin-price-chart-widget>
   </div>
 </body>
