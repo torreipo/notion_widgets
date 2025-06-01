@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solana Price Chart</title>
+  <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .widget-container {
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="widget-container">
+    <gecko-coin-price-chart-widget 
+      locale="en" 
+      outlined="true" 
+      coin-id="solana" 
+      initial-currency="usd" 
+      width="400">
+    </gecko-coin-price-chart-widget>
+  </div>
+</body>
+</html>
