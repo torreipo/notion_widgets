@@ -1,2 +1,17 @@
-<script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
-<gecko-coin-price-chart-widget locale="en" outlined="true" coin-id="bitcoin" initial-currency="usd"></gecko-coin-price-chart-widget>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitcoin Price Chart</title>
+  <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+</head>
+<body>
+  <gecko-coin-price-chart-widget 
+    locale="en" 
+    outlined="true" 
+    coin-id="bitcoin" 
+    initial-currency="usd">
+  </gecko-coin-price-chart-widget>
+</body>
+</html>
