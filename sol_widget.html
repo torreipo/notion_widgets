@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Solana Price Chart</title>
-  <script src="https://widgets.coingecko.com/gecko-coin-price-chart-widget.js"></script>
+  <title>SOL to USDC Converter</title>
+  <script async src="https://static.coinstats.app/widgets/coin-converter-widget.js"></script>
   <style>
     body {
-      background-color: #f9f9f9;
-      font-family: Arial, sans-serif;
+      background-color: #FFFFFF;
+      color: #1C1B1B;
+      font-family: Roboto, Arial, Helvetica, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
-    }
-    .widget-container {
-      width: 400px;
+      flex-direction: column;
     }
   </style>
 </head>
 <body>
-  <div class="widget-container">
-    <gecko-coin-price-chart-widget 
-      locale="en" 
-      outlined="true" 
-      coin-id="solana" 
-      initial-currency="usd" 
-      width="400">
-    </gecko-coin-price-chart-widget>
-  </div>
+  <coin-stats-converter-widget
+    sell-coin-id="solana"
+    buy-coin-id="usd-coin"
+    locale="en"
+    background="#FFFFFF"
+    text-color="#1C1B1B"
+    border-color="rgba(28,27,27,0.15)"
+    rotate-button-color="rgba(28,27,27,0.35)"
+    type="small"
+    font="Roboto, Arial, Helvetica"
+    width="300">
+  </coin-stats-converter-widget>
 </body>
 </html>
