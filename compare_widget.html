@@ -4,21 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOL to USDC Converter</title>
+  <script async src="https://static.coinstats.app/widgets/coin-converter-widget.js"></script>
   <style>
     body {
-      background-color: #1C1B1B;
-      color: #FFFFFF;
+      background-color: #FFFFFF;
+      color: #1C1B1B;
       font-family: Roboto, Arial, Helvetica, sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
       margin: 0;
     }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
-  <script async src="https://static.coinstats.app/widgets/coin-converter-widget.js"></script>
 </head>
 <body>
+
   <coin-stats-converter-widget 
     sell-coin-id="solana" 
     buy-coin-id="usd-coin" 
@@ -31,5 +43,8 @@
     font="Roboto, Arial, Helvetica" 
     width="300">
   </coin-stats-converter-widget>
+
+  <a href="index.html">← Back to Home</a>
+
 </body>
 </html>
