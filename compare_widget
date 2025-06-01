@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOL to USDC Converter</title>
+  <style>
+    body {
+      background-color: #1C1B1B;
+      color: #FFFFFF;
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+  <script async src="https://static.coinstats.app/widgets/coin-converter-widget.js"></script>
+</head>
+<body>
+  <coin-stats-converter-widget 
+    sell-coin-id="solana" 
+    buy-coin-id="usd-coin" 
+    locale="en" 
+    background="#1C1B1B" 
+    text-color="#FFFFFF" 
+    border-color="rgba(255,255,255,0.15)" 
+    rotate-button-color="rgba(255,255,255,0.35)" 
+    type="small" 
+    font="Roboto, Arial, Helvetica" 
+    width="300">
+  </coin-stats-converter-widget>
+</body>
+</html>
